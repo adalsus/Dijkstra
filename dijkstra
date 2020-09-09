@@ -112,7 +112,10 @@ ventana.geometry("410x189")
 posicionderecha = w - 410
 ventana.geometry( "+%d+0" % (posicionderecha) )
 ventana.resizable(width=False, height=False)
+
+#Download grafo.png from https://i.ibb.co/Y3h8Y4m/grafo.png
 imagen = PhotoImage(file="grafo.png")
+
 fondo = Label(ventana,image=imagen).place(x=0,y=0)
 ventana.protocol("WM_DELETE_WINDOW", disable_event)
 
